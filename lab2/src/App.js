@@ -1,13 +1,16 @@
-import './App.css';
-import  '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
-import Carousel from './Carousel/Carousel.jsx';
-
+import "./App.css";
+import Tasks from "./Components/Tasks/Tasks";
+import StandardErrorBoundry from "./Components/LCM/StandardErrorBoundry";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 function App() {
   return (
-    <Carousel/>
+    <>
+      <StandardErrorBoundry>
+        <Tasks />
+      </StandardErrorBoundry>
+    </>
   );
 }
 
 export default App;
-
