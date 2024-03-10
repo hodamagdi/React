@@ -1,0 +1,6 @@
+.CarouselImg {
+  height: 37.5rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
